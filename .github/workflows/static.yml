@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>واردات قطعات از دبی و عمان</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      color: #333;
+    }
+    header {
+      background-color: #005c99;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 28px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>واردات قطعات صنعتی از دبی و عمان</h1>
+  </header>
+
+  <section>
+    <p>
+      ما با بیش از ۱۰ سال سابقه در زمینه تأمین قطعات صنعتی و تخصصی، آماده ارائه خدمات واردات انواع تجهیزات و قطعات از دبی و عمان هستیم.
+    </p>
+
+    <h2>چرا دبی و عمان؟</h2>
+    <ul>
+      <li>دسترسی سریع به برندهای معتبر جهانی</li>
+      <li>امکان ارسال فوری از طریق هوایی یا دریایی</li>
+      <li>تنوع بالا و قیمت رقابتی قطعات</li>
+    </ul>
+
+    <h2>خدمات ما شامل:</h2>
+    <ul>
+      <li>جستجوی قطعه مورد نظر شما در بازار دبی یا عمان</li>
+      <li>ارائه پیش‌فاکتور رسمی و زمان تحویل</li>
+      <li>خرید و حمل امن تا مقصد شما در ایران</li>
+    </ul>
+
+    <p>برای دریافت مشاوره رایگان، لطفاً با ما تماس بگیرید یا درخواست خود را از طریق ایمیل ارسال نمایید.</p>
+  </section>
+
+  <footer>
+    © 2025 تمام حقوق محفوظ است.
+  </footer>
+
+</body>
+</html>
