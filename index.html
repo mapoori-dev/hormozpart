@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>واردات قطعات از دبی و عمان</title>
-
-  <!-- فونت فارسی Vazir -->
-  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>واردات قطعات - هرمز پارت</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
     body {
-      font-family: 'Vazir', Tahoma, sans-serif;
-      background-color: #f2f2f2;
       margin: 0;
-      padding: 0;
-      line-height: 1.8;
-      color: #333;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #000;
+      color: #fff;
+      background-image: url('https://gcdnb.pbrd.co/images/o60bUve2Y77Y.jpg?o=1');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
-    header {
-      background-color: #005c99;
-      color: white;
-      padding: 20px;
-      text-align: center;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px 20px;
+      min-height: 100vh;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+
     h1 {
-      font-size: 28px;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ffd700;
+      animation: fadeInDown 1.5s ease;
     }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    .card {
+      background-color: #111;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
     footer {
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
-    .whatsapp {
-      margin-top: 40px;
-      text-align: center;
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-    .whatsapp a {
-      background-color: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 18px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .whatsapp img {
-      margin-top: 15px;
-      width: 160px;
-      height: 160px;
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <h1>واردات تخصصی قطعات از دبی و عمان</h1>
 
-  <header>
-    <h1>واردات قطعات صنعتی از دبی و عمان</h1>
-  </header>
-
-  <section>
-    <p>
-      ما با بیش از ۱۰ سال سابقه در زمینه تأمین قطعات صنعتی و تخصصی، آماده ارائه خدمات واردات انواع تجهیزات و قطعات از دبی و عمان هستیم.
-    </p>
-
-    <h2>چرا دبی و عمان؟</h2>
-    <ul>
-      <li>دسترسی سریع به برندهای معتبر جهانی</li>
-      <li>امکان ارسال فوری از طریق هوایی یا دریایی</li>
-      <li>تنوع بالا و قیمت رقابتی قطعات</li>
-    </ul>
-
-    <h2>خدمات ما شامل:</h2>
-    <ul>
-      <li>جستجوی قطعه مورد نظر شما در بازار دبی یا عمان</li>
-      <li>ارائه پیش‌فاکتور رسمی و زمان تحویل</li>
-      <li>خرید و حمل امن تا مقصد شما در ایران</li>
-    </ul>
-
-    <p>برای دریافت مشاوره رایگان، لطفاً با ما تماس بگیرید یا درخواست خود را از طریق واتساپ ارسال نمایید.</p>
-
-    <div class="whatsapp">
-      <a href="https://wa.me/989173607043" target="_blank">سفارش از طریق واتساپ</a>
-      <br/>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/989173607043" alt="QR Code WhatsApp">
-      <p>شماره واتساپ: ۰۹۱۷۳۶۰۷۰۴۳</p>
+    <div class="services">
+      <div class="card">
+        <h3>قطعات اصلی</h3>
+        <p>تضمین قطعات اورجینال و با کیفیت مستقیم از تأمین‌کنندگان معتبر در دبی و عمان.</p>
+      </div>
+      <div class="card">
+        <h3>ضمانت و خدمات پس از فروش</h3>
+        <p>تمام قطعات با ضمانت معتبر و پشتیبانی فنی پس از فروش ارائه می‌شوند.</p>
+      </div>
+      <div class="card">
+        <h3>سریع‌ترین ارسال</h3>
+        <p>ارسال سریع قطعات از مبدا تا مقصد با هماهنگی گمرکی و حمل بین‌المللی.</p>
+      </div>
+      <div class="card">
+        <h3>سفارش‌سازی</h3>
+        <p>امکان ثبت سفارش قطعات خاص و کمیاب با شرایط ویژه برای مشتریان دائمی.</p>
+      </div>
     </div>
-  </section>
 
-  <footer>
-    © 2025 تمام حقوق محفوظ است.
-  </footer>
-
+    <footer>تمامی حقوق متعلق به هرمز پارت است © 2025</footer>
+  </div>
 </body>
 </html>
