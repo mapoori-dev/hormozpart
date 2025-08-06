@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>واردات قطعات - هرمز پارت</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
@@ -18,24 +18,68 @@
       background-attachment: fixed;
     }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(0 0 3px #ffd700);
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      /* حذف از هدر و انتقال به فوتر */
+    }
+
+    /* کلیدها پایین صفحه */
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 15px 0 0 0;
+    }
+
+    footer nav a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.8);
-      padding: 40px 20px;
+      padding: 40px 20px 80px 20px;
       min-height: 100vh;
+      box-sizing: border-box;
     }
 
     h1 {
       text-align: center;
       font-size: 2.5rem;
       color: #ffd700;
+      text-shadow:
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 15px #ffa500;
       animation: fadeInDown 1.5s ease;
+      margin-bottom: 40px;
     }
 
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-top: 40px;
       animation: fadeIn 2s ease;
     }
 
@@ -67,20 +111,36 @@
       margin-top: 50px;
       font-size: 0.9rem;
       color: #aaa;
+      padding-bottom: 30px;
     }
 
     @keyframes fadeInDown {
-      0% { opacity: 0; transform: translateY(-20px); }
-      100% { opacity: 1; transform: translateY(0); }
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://i.postimg.cc/JzpB4tHq/1720114329kia-logo-png-black.png" alt="KIA" class="logo" />
+    <img src="https://i.postimg.cc/JzrkLj00/580b585b2edbce24c47b2c77.png" alt="Hyundai" class="logo" />
+  </header>
+
   <div class="overlay">
     <h1>واردات تخصصی قطعات از دبی و عمان</h1>
 
@@ -102,8 +162,15 @@
         <p>امکان ثبت سفارش قطعات خاص و کمیاب با شرایط ویژه برای مشتریان دائمی.</p>
       </div>
     </div>
-
-    <footer>تمامی حقوق متعلق به هرمز پارت است © 2025</footer>
   </div>
+
+  <footer>
+    <nav>
+      <a href="#">خانه</a>
+      <a href="#">درباره ما</a>
+      <a href="https://api.whatsapp.com/send?phone=989173607043" target="_blank">تماس با ما</a>
+    </nav>
+    <div>تمامی حقوق متعلق به هرمز پارت است © 2025</div>
+  </footer>
 </body>
 </html>
